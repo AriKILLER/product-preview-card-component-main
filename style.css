@@ -9,33 +9,108 @@
 
 body{
     background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .perfume{
-    width: 35%;
+    width: 40%;
     margin: 0 auto;
     border-radius: 10px;
     background-color: var(--white);
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: stretch;
 }
 
 .perfume img{
     width: 50%;
-    height: auto;
-    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+    border-radius: 10px 0px 0 10px;
 }
 
 .content{
     width: 50%;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-
-.content h4{
+.content small{
+    color: var(--grey);
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    margin: 15px 0 0 15px;
 }
 
+.content h1{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    margin: 15px auto 0 15px;
+}
+
+.content p{
+    color: var(--grey);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin: 15px auto 0 15px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px auto 0 15px;
+}
+
+.price h2{
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    color: var(--green500);
+}
+
+.price p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: var(--grey);
+    margin-left: 15px;
+    text-decoration: line-through;
+}
+
+.cart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px auto 0 15px;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.cart img{
+    width: auto;
+    margin-right: 15px;
+}
+
+.cart button{
+    background-color: var(--green500);
+    color: var(--white);
+    border: none;
+    padding: 15px 60px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart button:hover{
+    background-color: var(--green700);
+}
 
 
