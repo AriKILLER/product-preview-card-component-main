@@ -28,19 +28,19 @@
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body>
-    <div class="perfume">
+    <article class="perfume">
       <img src="images/image-product-desktop.jpg" alt="Perfume Bottle" />
       <div class="content">
         <small>P E R F U M E</small>
-        <h1>Gabrielle Essence Eau De Parfum</h1>
-        <p>
+        <h1 class="product-title">Gabrielle Essence Eau De Parfum</h1>
+        <p class="description">
           A floral, solar and voluptuous interpretation composed by Olivier Polge,
           Perfumer-Creator for the House of CHANEL.
         </p>
-        <div class="price">
-          <h2>$149.99</h2>
-          <p class="discount">$169.99</p>
-        </div>
+        <p class="price">
+          <span class="current-price">$149.99</span>
+          <span class="old-price">$169.99</span>
+        </p>
         <div class="cart">
           <button class="add-to-cart">
             <img src="images/icon-cart.svg" alt="Cart Icon" />
@@ -48,6 +48,6 @@
           </button>
         </div>
       </div>
-    </div>
+    </article>
   </body>
 </html>
